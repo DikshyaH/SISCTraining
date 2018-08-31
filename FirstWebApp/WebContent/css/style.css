@@ -1,4 +1,35 @@
 
-p{
-	color:blue;
+h2{
+	text-align:center;
+	color: blue;
+}
+body{
+	background-color: #b9bcc6;
+}
+input[type=number] {
+width:98%;
+	padding: 10px;
+}
+input[type=textarea] {
+	width:98%;
+	padding: 10px;
+}
+/*.Fields{
+
+}*/
+.Slide{
+	font: italic;
+	
+}
+input[type=submit] {
+	background-color:navy;
+	border: none;
+	color:white;
+  
+    padding: 14px 20px;
+   
+	}
+
+input[type=submit]:hover {
+	background-color: gray;
 }
