@@ -9,15 +9,17 @@ body{
 input[type=number] {
 width:98%;
 	padding: 10px;
+	margin:8px;
 }
 input[type=textarea] {
 	width:98%;
 	padding: 10px;
+	margin:8px;
 }
 /*.Fields{
 
 }*/
-.Slide{
+p.Slide{
 	font: italic;
 	
 }
@@ -32,4 +34,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: gray;
+}
+section>p{
+	background-color: aqua;
 }
