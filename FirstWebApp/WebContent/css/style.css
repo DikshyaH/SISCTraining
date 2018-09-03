@@ -35,6 +35,3 @@ input[type=submit] {
 input[type=submit]:hover {
 	background-color: gray;
 }
-section>p{
-	background-color: aqua;
-}
