@@ -1,0 +1,70 @@
+article {
+	color: blue;
+}
+
+header>p {
+	color: fuchsia;
+}
+
+body small {
+	color: red;
+}
+
+h1, h2 {
+	
+}
+
+header ~ footer {
+	font-size: xx-small;
+}
+
+a:hover {
+	color: blue;
+}
+
+a:visited {
+	color: lime;
+}
+
+a:active {
+	background-color: orange;
+}
+
+article {
+	border: medium;
+	border-color: red;
+	border-style: groove;
+	outline-color: navy;
+	outline-style: solid;
+	width: 320px;
+	padding: 50px;
+	width: 320px
+}
+
+ul {
+	/*list-style: hiragana-iroha;*/
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+li>a{
+	display: block;
+	width: 60px;
+	background-color: buttonshadow;
+}
+
+h1:FIRST-CHILD {
+	color: maroon;
+}
+
+h1:BEFORE {
+	content: open-quote;
+}
+
+h1:FIRST-LETTER {
+	color: purple;
+}
+
+img {
+	opacity: 0.5;
+}
