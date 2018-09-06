@@ -82,11 +82,56 @@ function hello() {
 
 	}
 }
- function human(){
-	 var person={fname:"John",lname:"Doe",age:25};
-	 var text;
-	 for(x in person)
-		 {
-		 text=text+person[x];
-		 }
- }
+function human() {
+	var person = {
+		fname : "John",
+		lname : "Doe",
+		age : 25
+	};
+	var text;
+	for (x in person) {
+		text = text + person[x];
+	}
+}
+function roast() {
+
+	/*var errorMsgDiv = document.getElementById("testing");*/
+	/*errorMsgDiv.innerHTML=("<p> Season </p>");*/
+	/*var paraUsingTagName=document.getElementsByTagName("p");
+	paraUsingTagName.innerHTML=("Bye Everyone");*/
+	
+	var para=document.createElement("p");
+	var node=document.createTextNode("This is new.");
+	para.appendChild(node);
+	var element=document.getElementById("p1");
+	element.appendChild(para);
+	
+}
+function displayPhone() {}
+function Phone(make,model,year){
+	this.make=make;
+	this.model=model;
+	this.year=year;
+	this.displayPhone=function displayPhone() {
+		var result="Phone:"+this.year+""+this.make+""+this.model;
+			return result;
+		
+	}
+}
+
+function Model2(){
+	var fone=new Phone("China","Gionee",2018);
+	var result=fone.displayPhone();
+	console.log(result);
+}
+function Model(){
+	var myPhone=new Object();
+	myPhone.make="China";
+	myPhone["model"]="GioneeF103";
+	myPhone.type="Smartphone"
+	console.log(myPhone);
+}
+function Model1(){
+	var myPhone1={make:"China",model:{model17:1,model18:2},year:2018};
+	console.log(myPhone1);
+}
