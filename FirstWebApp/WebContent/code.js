@@ -95,43 +95,144 @@ function human() {
 }
 function roast() {
 
-	/*var errorMsgDiv = document.getElementById("testing");*/
-	/*errorMsgDiv.innerHTML=("<p> Season </p>");*/
-	/*var paraUsingTagName=document.getElementsByTagName("p");
-	paraUsingTagName.innerHTML=("Bye Everyone");*/
-	
-	var para=document.createElement("p");
-	var node=document.createTextNode("This is new.");
+	/* var errorMsgDiv = document.getElementById("testing"); */
+	/* errorMsgDiv.innerHTML=("<p> Season </p>"); */
+	/*
+	 * var paraUsingTagName=document.getElementsByTagName("p");
+	 * paraUsingTagName.innerHTML=("Bye Everyone");
+	 */
+
+	var para = document.createElement("p");
+	var node = document.createTextNode("This is new.");
 	para.appendChild(node);
-	var element=document.getElementById("p1");
+	var element = document.getElementById("p1");
 	element.appendChild(para);
-	
+
 }
-function displayPhone() {}
-function Phone(make,model,year){
-	this.make=make;
-	this.model=model;
-	this.year=year;
-	this.displayPhone=function displayPhone() {
-		var result="Phone:"+this.year+""+this.make+""+this.model;
-			return result;
-		
+function displayPhone() {
+}
+function Phone(make, model, year) {
+	this.make = make;
+	this.model = model;
+	this.year = year;
+	this.displayPhone = function displayPhone() {
+		var result = "Phone:" + this.year + "" + this.make + "" + this.model;
+		return result;
+
 	}
 }
 
-function Model2(){
-	var fone=new Phone("China","Gionee",2018);
-	var result=fone.displayPhone();
+function Model2() {
+	var fone = new Phone("China", "Gionee", 2018);
+	var result = fone.displayPhone();
 	console.log(result);
 }
-function Model(){
-	var myPhone=new Object();
-	myPhone.make="China";
-	myPhone["model"]="GioneeF103";
-	myPhone.type="Smartphone"
+function Model() {
+	var myPhone = new Object();
+	myPhone.make = "China";
+	myPhone["model"] = "GioneeF103";
+	myPhone.type = "Smartphone"
 	console.log(myPhone);
 }
-function Model1(){
-	var myPhone1={make:"China",model:{model17:1,model18:2},year:2018};
+function Model1() {
+	var myPhone1 = {
+		make : "China",
+		model : {
+			model17 : 1,
+			model18 : 2
+		},
+		year : 2018
+	};
 	console.log(myPhone1);
+}
+
+function Assignment() {
+	var book1 = {
+		title : "Harry Potter and The Soccerer's Stone",
+		author : "JK Rowling",
+		alreadyRead : 1
+	};
+	var book2 = {
+		title : "Simple Genius",
+		author : "David Baldacci",
+		alreadyRead : 1
+	};
+	var book3 = {
+		title : "Twilight:Breaking Dawn",
+		author : "Stephanie Meyer",
+		alreadyRead : 0
+	};
+	var book4 = {
+		title : "Matilda",
+		author : "Roald Dahl",
+		alreadyRead : 1
+	};
+
+	var allBooks = [ book1, book2, book3, book4 ];
+	var n;
+	for (n = 0; n < allBooks.length; n++) {
+		if ((allBooks[n]).alreadyRead == 1) {
+			console.log("You have read " + allBooks[n].title);
+
+		} else {
+			console.log("You still need to read " + allBooks[n].title);
+		}
+	}
+}
+function Movie(title, duration, actor) {
+	this.title = title;
+	this.duration = duration;
+	this.actor = actor;
+	this.movie = function movie() {
+		var result = this.title + "for" + this.duration + ".Actor:"
+				+ this.actor;
+		return result;
+
+	}
+}
+
+function movie() {
+	var movieTime = new Movie("The fault in our stars", 1.5, "Shailene Woodly");
+	var result = movieTime.movie();
+	console.log(result);
+}
+function shoppingCart() {
+	var cartForParty = {
+		banana : "1.25",
+		handkerchief : ".99",
+		Tshirt : "25.01",
+		apple : "0.60",
+		nalgene : "10.34",
+		proteinShake : "22.36"
+	};
+	var total = Number(cartForParty.banana) + Number(cartForParty.handkerchief)
+			+ Number(cartForParty.Tshirt) + Number(cartForParty.apple)
+			+ Number(cartForParty.nalgene) + Number(cartForParty.proteinShake)
+
+	console.log(total);
+}
+function date() {
+	var curday = function(sp) {
+		today = new Date();
+		var dd = today.getDate();
+		if (dd/2< 5) {
+			var dd = "0" + dd;
+		} else {
+			var dd = dd;
+		}
+		var mm = today.getMonth();
+		if (mm/2 < 5) {
+			var mm = "0" + mm;
+		} else {
+			var mm = mm;
+		}
+		var yyyy = today.getFullYear();
+
+		return (mm + sp + dd + sp + yyyy);
+
+	};
+
+	console.log(curday('/'));
+	console.log(curday('-'));
+
 }
