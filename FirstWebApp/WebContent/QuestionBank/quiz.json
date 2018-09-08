@@ -1,0 +1,27 @@
+{
+
+    "kelvi1":{"question":"Who is the father of our nation?",
+     "option1":"Mahatma Gandhi",
+     "option2":"Nehru",
+     "option3":"Hitler",
+     "option4":"Narendra Modi",
+     "count":"4",
+     "answer":"option1"},
+     "kelvi2":{"question":"What is defined in physics as 'a nuclear reaction in which nuclei combine to form more massive nuclei'?",
+      "option1":"fission",
+      "option2":"fusion",
+      "option3":"farking",
+      "option4":"fracking",
+      "option5":"freaking",
+      "count":"5",
+      "answer":"option2"},
+       "kelvi3":{"question":"Where is Taj Mahal situated?",
+       "option1":"New Delhi",
+       "option2":"Bangalore",
+       "option3":"Agra",
+       "option4":"Kolkata",
+       "count":"4",
+       "answer":"option3"}
+}
+   
+

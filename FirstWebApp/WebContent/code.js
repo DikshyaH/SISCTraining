@@ -236,3 +236,13 @@ function date() {
 	console.log(curday('-'));
 
 }
+ function happy(){
+var str="Hello world!";
+alert(str.substring(3,7));
+
+var str1="Hello US!";
+alert(str1.substr(2,11));
+}
+ 
+ console.log("2"+1);
+ alert('1'===1);
