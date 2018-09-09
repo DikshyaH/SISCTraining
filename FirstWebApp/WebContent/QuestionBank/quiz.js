@@ -46,7 +46,7 @@ function checkAnswer(){
                      alert('Correct answer :D');
                      correctCount+=1;
               }
-              else if(document.getElementById("quizSheet").selectedIndex = -1){
+              else if(document.getElementById("quizSheet").selectedIndex == -1){
             	  		alert('Please enter an option');
             	  		return;
               }
