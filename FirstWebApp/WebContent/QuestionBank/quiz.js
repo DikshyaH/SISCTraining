@@ -46,10 +46,9 @@ function checkAnswer(){
                      alert('Correct answer :D');
                      correctCount+=1;
               }
-              else if( document.getElementById("quizSheet").options.value == -1 ){
+              else if(document.getElementById("quizSheet").selectedIndex = -1){
             	  		alert('Please enter an option');
-            	  		
-            	  		checkAnswer();
+            	  		return;
               }
               else
                   alert('Sorry! Wrong answer :(');
