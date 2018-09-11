@@ -1,13 +1,16 @@
 h1 {
-	margin-left: 50px;
-	top: -32px;
-	position: relative;
+	    margin-left: 50px;
+    top: -23px;
+    position: relative;
+    font-weight: 200;
+    font-size: 32px
 }
 
 h2 {
 	margin-left: 50px;
-	font-size: 19px;
-	margin-top: -54px;
+	font-size: 22px;
+	font-weight: 100;
+	margin-top: -57px;
 }
 
 section {
@@ -35,15 +38,17 @@ button {
 	padding: 10px;
 	margin-left: 915px;
 	border: none;
-	border-radius: 5px; position : relative;
+	border-radius: 5px;
+	position: relative;
 	top: 11px;
 	right: -35px;
 	position: relative;
-	z-index:1;
+	z-index: 1;
 }
 
 div {
-	font: 17px/28px Tahoma, sans-serif, Arial, Helvetica;
+	font: 17px/31px impact;
+	font-weight: lighter;
 	/* border-style: solid; */
 	/* padding: 112px; */
 	background-color: white;
