@@ -46,10 +46,17 @@ function checkAnswer(){
                      alert('Correct answer :D');
                      correctCount+=1;
               }
+<<<<<<< HEAD
               else if( document.getElementById("quizSheet").options.value == "" ){
+=======
+              else if(document.getElementById("quizSheet").selectedIndex == -1){
+>>>>>>> branch 'master' of https://github.com/DikshyaH/SISCTraining.git
             	  		alert('Please enter an option');
             	  		return;
+<<<<<<< HEAD
 //            	  		checkAnswer();		
+=======
+>>>>>>> branch 'master' of https://github.com/DikshyaH/SISCTraining.git
               }
               else
             	
